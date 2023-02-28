@@ -1,0 +1,18 @@
+
+@import 'abstracts/_variables.scss';
+@import 'abstracts/_mixins.scss';
+@import 'abstracts/_functions.scss';
+
+@import 'base/_shadow.scss';
+
+@import 'base/_utilities.scss';
+@import 'base/_color.scss';
+
+@import 'layout/_flex.scss';
+// components
+
+@import 'components/_button.scss';
+
+html {
+    font-size: 10px;
+}

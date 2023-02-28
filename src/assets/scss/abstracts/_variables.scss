@@ -1,0 +1,75 @@
+
+// colors
+$white: #ffffff;
+$primary: #9155FD;
+$primary-light: #9E69FD;
+$primary-dark: #6E41C0;
+$primary-contained-bg-hover: #804BDF;
+$primary-outlined-bg-hover: rgba($primary, 0.08);
+$primary-outlined-bg-hover: rgba($primary, 0.5);
+
+
+$secondary: #8A8D93; 
+$secondary-light: #9C9FA4;
+$secondary-dark: #4D5056;
+$secondary-contained-bg-hover: #777B82;
+$secondary-outlined-bg-hover: rgba($secondary, 0.08);
+$secondary-outlined-bg-hover: rgba($secondary, 0.5);
+
+$info: #16B1FF; 
+$info-light: #32BAFF;
+$info-dark: #0E71A3;
+$info-contained-bg-hover: #139CE0;
+$info-outlined-bg-hover: rgba($info, 0.08);
+$info-outlined-bg-hover: rgba($info, 0.5);
+
+
+$success: #56CA00; 
+$success-light: #6AD01F;
+$success-dark: #378100;
+$success-contained-bg-hover: #4CB200;
+$success-outlined-bg-hover: rgba($success, 0.08);
+$success-outlined-bg-hover: rgba($success, 0.5);
+
+$warning: #FFB400; 
+$warning-light: #FFB547;
+$warning-dark: #A37300;
+$warning-contained-bg-hover: #E09E00;
+$warning-outlined-bg-hover: rgba($warning, 0.08);
+$warning-outlined-bg-hover: rgba($warning, 0.5);
+
+$error: #FF4C51; 
+$error-light: #FF6166;
+$error-dark: #A33134;
+$error-contained-bg-hover: #E04347;
+$error-outlined-bg-hover: rgba($error, 0.08);
+$error-outlined-bg-hover: rgba($error, 0.5);
+
+
+$text-primary: rgba(231, 227, 252, 0.87);
+$text-secondary: rgba(231, 227, 252, 0.87);
+$text-disabled: rgba(231, 227, 252, 0.87);
+
+$action-active: rgba(231, 227, 252, 0.54);
+$action-hover: rgba(231, 227, 252, 0.04);
+$action-selected:  rgba(231, 227, 252, 0.08);
+$action-disabled: rgba(231, 227, 252, 0.26);
+$action-disabled-bg: rgba(231, 227, 252, 0.12);
+$action-disabled-hover: rgba(231, 227, 252, 0.12);
+
+
+$divider:  rgba(231, 227, 252, 0.12);
+$outline-border:  rgba(231, 227, 252, 0.23);
+$input-line: rgba(231, 227, 252, 0.22);
+$overlay: rgba(44, 41, 66, 0.87);
+$snackbar-bg: white;
+$body-bg: #28243D;
+$paper-card: #312D4B;
+
+$custom-primary: linear-gradient(0deg, rgba(49, 45, 75, 0.88), rgba(49, 45, 75, 0.88)), #9155FD;
+$custom-secondary:  linear-gradient(0deg, rgba(49, 45, 75, 0.88), rgba(49, 45, 75, 0.88)), #8A8D93;
+$custom-info: linear-gradient(0deg, rgba(49, 45, 75, 0.88), rgba(49, 45, 75, 0.88)), #2196F3;
+$custom-success: linear-gradient(0deg, rgba(49, 45, 75, 0.88), rgba(49, 45, 75, 0.88)), #4CAF50;
+$custom-warning: linear-gradient(0deg, rgba(49, 45, 75, 0.88), rgba(49, 45, 75, 0.88)), #FFB400;
+$custom-error: linear-gradient(0deg, rgba(49, 45, 75, 0.88), rgba(49, 45, 75, 0.88)), #F44336;
+

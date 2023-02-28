@@ -1,0 +1,472 @@
+// bg colors
+.bg-white {
+    background-color: $white;
+}
+.bg-primary {
+    background-color: $primary;
+}
+
+.bg-primary-light {
+    background-color: $primary-light;
+}
+
+.bg-primary-dark {
+    background-color: $primary-dark;
+}
+
+.bg-primary-contained-bg-hover {
+    background-color: $primary-contained-bg-hover;
+}
+
+.bg-primary-outlined-bg-hover {
+    background-color: $primary-outlined-bg-hover;
+}
+
+.bg-primary-outlined-bg-hover {
+    background-color: $primary-outlined-bg-hover;
+}
+
+.bg-secondary {
+    background-color: $secondary; 
+}
+
+.bg-secondary-light {
+    background-color: $secondary-light;
+}
+
+.bg-secondary-dark {
+    background-color: $secondary-dark;
+}
+
+.bg-secondary-contained-bg-hover {
+    background-color: $secondary-contained-bg-hover;
+}
+
+.bg-secondary-outlined-bg-hover {
+    background-color: $secondary-outlined-bg-hover;
+}
+
+.bg-secondary-outlined-bg-hover {
+    background-color: $secondary-outlined-bg-hover;
+}
+
+.bg-info {
+    background-color: $info; 
+}
+
+.bg-info-light {
+    background-color: $info-light;
+}
+
+.bg-info-dark {
+    background-color: $info-dark;
+}
+
+.bg-info-contained-bg-hover {
+    background-color: $info-contained-bg-hover;
+}
+
+.bg-info-outlined-bg-hover {
+    background-color: $info-outlined-bg-hover;
+}
+
+.bg-info-outlined-bg-hover {
+    background-color: $info-outlined-bg-hover;
+}
+
+.bg-success {
+    background-color: $success; 
+}
+
+.bg-success-light {
+    background-color: $success-light;
+}
+
+.bg-success-dark {
+    background-color: $success-dark;
+}
+
+.bg-success-contained-bg-hover {
+    background-color: $success-contained-bg-hover;
+}
+
+.bg-success-outlined-bg-hover {
+    background-color: $success-outlined-bg-hover;
+}
+
+.bg-success-outlined-bg-hover {
+    background-color: $success-outlined-bg-hover;
+}
+
+.bg-warning {
+    background-color: $warning;
+}
+
+.bg-warning-light {
+    background-color: $warning-light;
+}
+
+.bg-warning-dark {
+    background-color: $warning-dark;
+}
+
+.bg-warning-contained-bg-hover {
+    background-color: $warning-contained-bg-hover;
+}
+
+.bg-warning-outlined-bg-hover {
+    background-color: $warning-outlined-bg-hover;
+}
+
+.bg-warning-outlined-bg-hover {
+    background-color: $warning-outlined-bg-hover;
+}
+
+.bg-error {
+    background-color: $error; 
+}
+
+.bg-error-light {
+    background-color: $error-light;
+}
+.bg-error-dark {
+    background-color: $error-dark;
+}
+
+.bg-error-contained-bg-hover {
+    background-color: $error-contained-bg-hover;
+}
+
+.bg-error-outlined-bg-hover {
+    background-color: $error-outlined-bg-hover;
+}
+
+.bg-error-outlined-bg-hover {
+    background-color: $error-outlined-bg-hover;
+}
+
+.bg-text-primary {
+    background-color: $text-primary;
+}
+
+.bg-text-secondary {
+    background-color: $text-secondary;
+}
+
+.bg-text-disabled {
+    background-color: $text-disabled;
+}
+
+.bg-action-active {
+    background-color: $action-active;
+}
+
+.bg-action-hover {
+    background-color: $action-hover;
+}
+
+.bg-action-selected {
+    background-color: $action-selected;
+}
+
+.bg-action-disabled {
+    background-color: $action-disabled;
+}
+
+.bg-action-disabled-bg {
+    background-color: $action-disabled-bg;
+}
+
+.bg-action-disabled-hover {
+    background-color: $action-disabled-hover;
+}
+
+.bg-divider {
+    background-color: $divider;
+}
+
+.bg-outline-border {
+    background-color: $outline-border;
+}
+
+.bg-input-line {
+    background-color: $input-line;
+}
+
+.bg-overlay {
+    background-color: $overlay;
+}
+
+.bg-snackbar-bg {
+    background-color: $snackbar-bg;
+}
+
+.bg-body-bg {
+    background-color: $body-bg;
+}
+
+.bg-paper-card {
+    background-color: $paper-card;
+}
+
+.bg-custom-primary  {
+    background-color: $custom-primary;
+}
+
+.bg-custom-secondary {
+    background-color: $custom-secondary;
+}
+
+.bg-custom-info {
+    background-color: $custom-info;
+}
+
+.bg-custom-success {
+    background-color: $custom-success;
+}
+.bg-custom-warning {
+    background-color: $custom-warning;
+}
+
+.bg-custom-error {
+    background-color: $custom-error;
+}
+
+// Colors
+.white {
+    color: $white;
+}
+.primary {
+    color: $primary;
+}
+
+.primary-light {
+    color: $primary-light;
+}
+
+.primary-dark {
+    color: $primary-dark;
+}
+
+.primary-contained-bg-hover {
+    color: $primary-contained-bg-hover;
+}
+
+.primary-outlined-bg-hover {
+    color: $primary-outlined-bg-hover;
+}
+
+.primary-outlined-bg-hover {
+    color: $primary-outlined-bg-hover;
+}
+
+.secondary {
+    color: $secondary; 
+}
+
+.secondary-light {
+    color: $secondary-light;
+}
+
+.secondary-dark {
+    color: $secondary-dark;
+}
+
+.secondary-contained-bg-hover {
+    color: $secondary-contained-bg-hover;
+}
+
+.secondary-outlined-bg-hover {
+    color: $secondary-outlined-bg-hover;
+}
+
+.secondary-outlined-bg-hover {
+    color: $secondary-outlined-bg-hover;
+}
+
+.info {
+    color: $info; 
+}
+
+.info-light {
+    color: $info-light;
+}
+
+.info-dark {
+    color: $info-dark;
+}
+
+.info-contained-bg-hover {
+    color: $info-contained-bg-hover;
+}
+
+.info-outlined-bg-hover {
+    color: $info-outlined-bg-hover;
+}
+
+.info-outlined-bg-hover {
+    color: $info-outlined-bg-hover;
+}
+
+.success {
+    color: $success; 
+}
+
+.success-light {
+    color: $success-light;
+}
+
+.success-dark {
+    color: $success-dark;
+}
+
+.success-contained-bg-hover {
+    color: $success-contained-bg-hover;
+}
+
+.success-outlined-bg-hover {
+    color: $success-outlined-bg-hover;
+}
+
+.success-outlined-bg-hover {
+    color: $success-outlined-bg-hover;
+}
+
+.warning {
+    color: $warning;
+}
+
+.warning-light {
+    color: $warning-light;
+}
+
+.warning-dark {
+    color: $warning-dark;
+}
+
+.warning-contained-bg-hover {
+    color: $warning-contained-bg-hover;
+}
+
+.warning-outlined-bg-hover {
+    color: $warning-outlined-bg-hover;
+}
+
+.warning-outlined-bg-hover {
+    color: $warning-outlined-bg-hover;
+}
+
+.error {
+    color: $error; 
+}
+
+.error-light {
+    color: $error-light;
+}
+.error-dark {
+    color: $error-dark;
+}
+
+.error-contained-bg-hover {
+    color: $error-contained-bg-hover;
+}
+
+.error-outlined-bg-hover {
+    color: $error-outlined-bg-hover;
+}
+
+.error-outlined-bg-hover {
+    color: $error-outlined-bg-hover;
+}
+
+.text-primary {
+    color: $text-primary;
+}
+
+.text-secondary {
+    color: $text-secondary;
+}
+
+.text-disabled {
+    color: $text-disabled;
+}
+
+.action-active {
+    color: $action-active;
+}
+
+.action-hover {
+    color: $action-hover;
+}
+
+.action-selected {
+    color: $action-selected;
+}
+
+.action-disabled {
+    color: $action-disabled;
+}
+
+.action-disabled-bg {
+    color: $action-disabled-bg;
+}
+
+.action-disabled-hover {
+    color: $action-disabled-hover;
+}
+
+.divider {
+    color: $divider;
+}
+
+.outline-border {
+    color: $outline-border;
+}
+
+.input-line {
+    color: $input-line;
+}
+
+.overlay {
+    color: $overlay;
+}
+
+.snackbar-bg {
+    color: $snackbar-bg;
+}
+
+.body-bg {
+    color: $body-bg;
+}
+
+.paper-card {
+    color: $paper-card;
+}
+
+.custom-primary  {
+    color: $custom-primary;
+}
+
+.custom-secondary {
+    color: $custom-secondary;
+}
+
+.custom-info {
+    color: $custom-info;
+}
+
+.custom-success {
+    color: $custom-success;
+}
+.custom-warning {
+    color: $custom-warning;
+}
+
+.custom-error {
+    color: $custom-error;
+}
+
+
+
+// colors 
+
