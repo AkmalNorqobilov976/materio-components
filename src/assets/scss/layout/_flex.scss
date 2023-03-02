@@ -49,3 +49,47 @@
 .gap-medium {
     gap: .5rem;
 }
+
+@for $gap from 1 through $gaps {
+    .gap-#{$gap} {
+        gap: $space-size * $gap;
+    }
+}
+
+.gap-5 {
+    gap: 2rem;
+}
+
+.gap-4 {
+    gap: 1.6rem;
+}
+
+.gap-3 {
+    gap: 1.2rem;
+}
+
+.gap-2 {
+    gap: .8rem;
+}
+
+.gap-1 {
+    gap: .4rem;
+}
+
+
+.flex-shrink-1 {
+    flex-shrink: 1;
+}
+
+.flex-grow-1 {
+    flex-grow: 1;
+}
+
+
+// grid system
+@for $width from 1 through $columns {
+	.col-#{$width} {
+		flex-basis: $width / $columns * 100%;
+	}  
+}
+

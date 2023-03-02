@@ -1,0 +1,11 @@
+.after-circle {
+    &::after {
+        border-radius: 50%;
+    }
+}
+
+.after-rounted {
+    &::after {
+        border-radius: 3rem;
+    }
+}

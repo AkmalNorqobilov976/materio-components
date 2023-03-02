@@ -3,16 +3,28 @@
 @import 'abstracts/_mixins.scss';
 @import 'abstracts/_functions.scss';
 
-@import 'base/_shadow.scss';
 
+@import 'base/_typography.scss';
+@import 'base/_base.scss';
+@import 'base/_shadow.scss';
 @import 'base/_utilities.scss';
 @import 'base/_color.scss';
-
+@import 'base/_pseudos.scss';
+@import 'base/_paper.scss';
+@import 'base/_list-style.scss';
+// layouts
 @import 'layout/_flex.scss';
+@import 'layout/_grid.scss';
 // components
 
 @import 'components/_button.scss';
+@import 'components/_icon.scss';
 
 html {
     font-size: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
 }

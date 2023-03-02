@@ -1,40 +1,38 @@
 <template>
     <div 
-        :aria-disabled="disabled"
-        class="button" 
+        
+        class="alert flex align-items-center gap-3 px-3 py-2" 
         :style="isOutlined" 
         :class="[
             { 'flex-direction-row-reverse': right }, 
-            { 'gap-medium': text }, 
-            text && `btn-${size}`, 
-            borderType,
-            block ? 'block' : 'inline-flex',
-            disabled && 'btn-disabled' 
-            
+            borderType 
         ]"
         v-bind="$attrs"
     >
         
         <slot name="icon">
-            <i :class="[icon, !text && `icon-${size}`]" :style="isOutlinedBtn"></i>
-            <button v-if="text" 
-                :style="isOutlinedBtn">
-                <slot>{{ text }}</slot>
-            </button>
+            <i :class="[icon, `text-h6`]" :style="isOutlinedBtn"></i>
+            <div v-if="text" 
+                :style="isOutlinedBtn"
+                class="text-left"
+            >
+                <p class="text-subtitle1">
+                    <slot>{{ text }}</slot>
+                </p>
+                <p class="text-caption">
+                    {{ message }}
+                </p>
+            </div>
         </slot>
     </div>
 </template>
 
 <script lang="ts">
-type BtnTypes = 'large' | 'medium' | 'small';
+type AlertTypes = 'large' | 'medium' | 'small';
 import { computed, defineComponent, PropType } from "vue";
 
     export default defineComponent({
         props: {
-            block: {
-                type: Boolean,
-                default: false
-            },
             outlined: {
                 type: Boolean,
                 default: false
@@ -45,7 +43,7 @@ import { computed, defineComponent, PropType } from "vue";
             },
             icon: {},
             size: {
-                type: String as PropType<BtnTypes>,
+                type: String as PropType<AlertTypes>,
                 default: 'medium'
             },
             bgColor: {
@@ -56,15 +54,14 @@ import { computed, defineComponent, PropType } from "vue";
                 type: String,
                 default: 'action-disabled'
             },
-            disabled: {
-                type: Boolean,
-                default: false
-            },
             text: {
                 type: String
             },
             right: {
                 type: Boolean
+            },
+            message: {
+                type: String
             }
         },
 
@@ -87,13 +84,7 @@ import { computed, defineComponent, PropType } from "vue";
 </script>
 
 <style lang="scss" scoped>
-button {
-    outline: none;
-    border: none;
-    background: transparent;
-}
-
-.button {
+.alert {
     border-radius: .5rem;
 }
 </style>

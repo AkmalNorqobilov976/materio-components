@@ -28,11 +28,22 @@
 
 
 .btn-disabled {
-    background: rgba(58, 53, 65, 0.12);
-    color: rgba(58, 53, 65, 0.26);
+    background: rgba(58, 53, 65, 0.12) !important;
+    color: rgba(58, 53, 65, 0.26) !important;
+    border: .1rem solid rgba(58, 53, 65, 0.26) !important;
 }
 
 .success-btn {
     @include btn-padding-mixin;
     color: $primary;
+}
+
+.rounded {
+    border-radius: 30px !important;
+}
+
+.circle {
+    border-radius: 50% !important;
+    aspect-ratio: 1/1 !important;
+    line-height: 100% !important;
 }

@@ -1,17 +1,18 @@
 <template>
     <div 
-        class="checkbox flex align-items-center"
-        :class="[  {'flex-direction-row-reverse': right} ]"
+        class="checkbox flex align-items-center py-1"
+        :class="[  {'flex-direction-row-reverse': right} ]"    
     >
         <input 
-            :id="idKey" 
-            type="checkbox" 
+            :id="idKey"
+            :name="name" 
+            type="radio" 
             :style="`--shadow-color: rgba($color: ${color}, $alpha: 0.08);`"  
-            :class="[icon, { circle: circle }]" 
+            :class="[icon, {circle: circle}, { 'after-circle': circle }]" 
             :value="value" 
-            v-model="model"
-            />
-            <!-- @change="updateModel($event)" -->
+            v-bind="$attrs"
+            @change="updateModel($event)"
+        />
         <label :for="idKey" class="text-body1"> {{ label }} </label>
     </div>
 </template>
@@ -21,58 +22,42 @@ import { computed, defineComponent, PropType } from "vue";
 
     export default defineComponent({
         props: {
-            selectType: {
-                type: String as PropType<'value' | 'checked'>,
-                default: 'checked'
-            },
-            right: {
-                type: Boolean,
-                default: false
-            },
             circle: {
                 type: Boolean,
                 default: false,
             },
-            modelValue: {
-                type: [Array, Boolean]
-            },
-
-            value: {
-                type: [Boolean, Object]
-            },
+            value: {},
+            modelValue: {},
             label: {
                 type: String
             },
             idKey: {
-                type: String as PropType<any>
+                type: String
             },
             color: {
                 type: String
             },
             icon: {
                 type: String as PropType<'check' | 'minus'>,
-                default: 'check'
+                default: ''
+            },
+            name: {
+                type: String
+            },
+            right: {
+                type: Boolean,
+                default: false
             }
         },
         emits: ['update:modelValue'],
         setup(props, { emit }) {
-
-            const model = computed(({
-                get() {
-                    return props.modelValue
-                },
-                set(value) {
-                    emit('update:modelValue', value)
-                }
-            }))
             const updateModel = (e: any) => {
-                emit('update:modelValue', e.target[props.selectType])
+                emit('update:modelValue', e.target.value)
             }
             const iconComputed = computed(() => `rgba($color: ${props.color}, $alpha: 0.08)`)
             return {
                 updateModel,
-                iconComputed,
-                model
+                iconComputed
             }
         }
     })
@@ -84,17 +69,19 @@ import { computed, defineComponent, PropType } from "vue";
     $color: v-bind(color);
     .checkbox {
         gap: 1.3rem;    
-        input[type="checkbox"] {
+        input[type="radio"] {
             appearance: none;
-
+            padding: .6rem;
             width: 1.6rem;
             aspect-ratio: 1/1;
-            border-radius: .3rem;
-            border: .1rem solid $checkbox-color;
+            // border-radius: .3rem;
+            border: .2rem solid $checkbox-color;
             line-height: 2.6rem;
         }
         
-        input[type="checkbox"]:checked {
+        input[type="radio"]:checked {
+            outline: .2rem solid v-bind(color);
+            outline-offset: .4rem;
             background-color: v-bind(color) !important;
             border: none;
             transition: background-color .3s ease;
@@ -102,14 +89,13 @@ import { computed, defineComponent, PropType } from "vue";
             &::after {
                 position: absolute;
                 content: '';
-                z-index: -1;
                 left: -1rem;
                 top: -1rem;
                 right: -1rem;
                 bottom: -1rem;
                 background: v-bind(color);
                 opacity: .08;
-                border-radius: 50%;
+                
                 // var(--shadow-color)
             }
         }
@@ -130,6 +116,7 @@ import { computed, defineComponent, PropType } from "vue";
         .circle {
             border-radius: 50% !important;
             width: 1.8rem !important;
+            
         }
     }
 </style>

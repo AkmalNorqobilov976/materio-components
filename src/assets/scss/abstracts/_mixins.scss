@@ -10,10 +10,14 @@
 @mixin paper-outlined{
     border: 1px solid rgba(231, 227, 252, 0.12);
     border-radius: 6px;
+    border: 1px solid rgba(58, 53, 65, 0.12);
+
 }
 
 @mixin paper-outlined-square{
     border: 1px solid rgba(231, 227, 252, 0.12);
+    border: 1px solid rgba(58, 53, 65, 0.12);
+
 }
 
 

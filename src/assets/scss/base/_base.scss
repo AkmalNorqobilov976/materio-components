@@ -1,0 +1,81 @@
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+@for $padding from 0 through $paddings {
+	.pa-#{$padding} {
+		padding: $padding * $space-size;
+	}
+    
+    .pr-#{$padding} {
+        padding-right: $padding * $space-size;
+    }
+
+    .pl-#{$padding} {
+        padding-left: $padding * $space-size;
+    }
+
+
+    .pt-#{$padding} {
+        padding-top: $padding * $space-size;
+    }
+
+
+    .pb-#{$padding} {
+        padding-bottom: $padding * $space-size;
+    }
+
+    .px-#{$padding} {
+        padding-left: $padding * $space-size;
+        padding-right: $padding * $space-size;
+    }
+
+
+    .py-#{$padding} {
+        padding-top: $padding * $space-size;
+        padding-bottom: $padding * $space-size;
+    }
+}
+
+@for $margin from 0 through $margins {
+	.ma-#{$margin} {
+		margin: $margin * $space-size;
+	}
+    
+    .mr-#{$margin} {
+        margin-right: $margin * $space-size;
+    }
+
+    .ml-#{$margin} {
+        margin-left: $margin * $space-size;
+    }
+
+
+    .mt-#{$margin} {
+        margin-top: $margin * $space-size;
+    }
+
+
+    .mb-#{$margin} {
+        margin-bottom: $margin * $space-size;
+    }
+
+    .mx-#{$margin} {
+        margin-left: $margin * $space-size;
+        margin-right: $margin * $space-size;
+    }
+
+
+    .my-#{$margin} {
+        margin-top: $margin * $space-size;
+        margin-bottom: $margin * $space-size;
+    }
+}
