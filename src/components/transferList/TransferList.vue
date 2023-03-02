@@ -14,7 +14,7 @@
                 </li>
             </ul>
         </div>
-        <div class="col-1 flex flex-direction-column gap-1">
+        <div class="col-1 flex flex-direction-column gap-1 align-items-center">
             <div>
                 
                 <Button @click="onPassToRight" :color="color" :borderType="'circle'" :bgColor="color" :size="'large'" label outlined> 

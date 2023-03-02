@@ -1,12 +1,14 @@
 <template>
   <nav>
-    <p  class="bg-info" v-ripple>Hello</p>
+    <p v-tooltip.bottom class="bg-info" v-ripple>Hello</p>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </nav>
   <TransferList :list-data="lists"/>
+  <Tooltip :position="'right'"><span>Hihihi</span></Tooltip>
   <Button 
     v-ripple
+    v-tooltip
     :text="'Button'" 
     :icon="'ri-arrow-left-line'" 
     :bgColor="'blue'" 
@@ -14,8 +16,11 @@
     :size="'large'"
     borderType="rounded"
   />
-
-  <Slider/>
+  
+  <!-- <Slider/> -->
+  <div>
+    <SliderCustom/>
+  </div>
   {{ data }}
   <Checkbox v-model="data" :idKey="'haha'" :label="'Label'" :icon="'minus'" circle :color="'blue'"/>
   <Radio class="px-3" v-model="data" value="Nomer" :name="'hi'" circle :color="'red'"/>
@@ -38,7 +43,9 @@ import Alert from "./components/alert/Alert.vue";
 import Button from "./components/buttons/Button.vue";
 import Checkbox from "./components/checkbox/Checkbox.vue";
 import Radio from "./components/radio/Radio.vue";
-import Slider from "./components/slider/Slider.vue";
+// import Slider from "./components/slider/Slider.vue";
+import SliderCustom from "./components/slider/SliderCustom.vue";
+import Tooltip from "./components/tooltip/Tooltip.vue";
 import TransferList from "./components/transferList/TransferList.vue";
 
   export default defineComponent({
@@ -48,7 +55,9 @@ import TransferList from "./components/transferList/TransferList.vue";
     Radio,
     Alert,
     TransferList,
-    Slider
+    // Slider,
+    SliderCustom,
+        Tooltip
 },
     data() {
       return {
@@ -72,24 +81,6 @@ import TransferList from "./components/transferList/TransferList.vue";
   })
 </script>
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+  
 
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
 </style>
