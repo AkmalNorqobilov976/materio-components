@@ -4,8 +4,14 @@
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </nav>
+  <date-picker/>
   <TransferList :list-data="lists"/>
   <Tooltip :position="'right'"><span>Hihihi</span></Tooltip>
+  <span v-tooltip class="pa-2 secondary" v-ripple>Tooltip directive</span>
+  <div class="px-4">
+    <Rating :showControl="false"/>
+    <Switch color="#affffa" :label="'Salom sizlarga'"/>
+  </div>
   <Button 
     v-ripple
     v-tooltip
@@ -45,9 +51,11 @@ import Checkbox from "./components/checkbox/Checkbox.vue";
 import Radio from "./components/radio/Radio.vue";
 // import Slider from "./components/slider/Slider.vue";
 import SliderCustom from "./components/slider/SliderCustom.vue";
+import Rating from "./components/star/Rating.vue";
 import Tooltip from "./components/tooltip/Tooltip.vue";
 import TransferList from "./components/transferList/TransferList.vue";
-
+import Switch from "./components/switch/Switch.vue";
+import DatePicker from "./components/datepicker/DatePicker.vue";
   export default defineComponent({
     components: {
     Button,
@@ -57,7 +65,10 @@ import TransferList from "./components/transferList/TransferList.vue";
     TransferList,
     // Slider,
     SliderCustom,
-        Tooltip
+    Tooltip,
+    Rating,
+    Switch,
+        DatePicker
 },
     data() {
       return {

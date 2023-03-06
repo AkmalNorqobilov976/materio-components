@@ -19,7 +19,7 @@ import { defineComponent, onMounted, PropType, ref } from 'vue';
                 default: 0
             },
             modelValue: {
-
+                type: Number
             },
             step: {
                 type: Number,
